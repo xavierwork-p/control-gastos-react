@@ -1,16 +1,102 @@
-# React + Vite
+# Control de Gastos React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React para la gestión básica de ingresos y gastos personales.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://control-gastos-react-rust.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Características
 
-## Expanding the ESLint configuration
+- Agregar ingresos y gastos
+- Eliminar transacciones
+- Balance total automático
+- Separación entre ingresos y gastos
+- Persistencia de datos con LocalStorage
+- Interfaz responsive
+- Actualización dinámica de la interfaz con React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- React
+- JavaScript
+- CSS3
+- Vite
+- LocalStorage
+
+---
+
+## Conceptos implementados
+
+### React Hooks
+
+Uso de:
+- useState
+- useEffect
+
+para manejo de estado y persistencia de datos.
+
+---
+
+### Componentes reutilizables
+
+La aplicación fue dividida en componentes independientes:
+
+- Balance
+- FormularioTransaccion
+- ListaTransacciones
+
+---
+
+### Renderizado dinámico
+
+Uso de:
+- map()
+- props
+- renderizado condicional
+
+para mostrar transacciones dinámicamente.
+
+---
+
+### Persistencia de datos
+
+Implementación de LocalStorage para conservar la información incluso después de recargar la página.
+
+---
+
+## Instalación local
+
+Clonar repositorio:
+
+```bash
+git clone https://github.com/xavierwork-p/control-gastos-react.git
+```
+
+Entrar al proyecto:
+
+```bash
+cd control-gastos-react
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar proyecto:
+
+```bash
+npm run dev
+```
+
+---
+
+## Autor
+
+Xavier Peralta
